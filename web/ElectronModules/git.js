@@ -132,7 +132,7 @@ ipc.on('git_add_repo', (event,args) => {
       console.log(git);
       var git = simpleGit();
       git.clone(
-        "https://github.com/some-open-solutions/collector",
+        "https://github.com/scientific-open-solutions/collector",
         root_dir +
         "repositories"         + "/" +
           args["organization"] + "/" +
@@ -142,7 +142,7 @@ ipc.on('git_add_repo', (event,args) => {
         console.log("result:");
         console.log(result);
         /*
-        * Remove the local .git folder to prevent synching with some-open-solutions version
+        * Remove the local .git folder to prevent synching with scienitific-open-solutions version
         */
         fs.rmdirSync(
           root_dir +
@@ -623,6 +623,21 @@ ipc.on('git_valid_org', (event, args) => {
   const octokit = new Octokit({
     auth: auth_token,
   });
+  console.log(auth_token);
+  console.log("octokit");
+  console.log(octokit);
+
+  /*
+
+  octokit.orgs.get({
+    org: args["organization"]
+  }).then(function(result){
+    console.dir("success");
+  }).catch(function(error){
+    console.dir("error: " + error);
+  });
+
+  */
 
   octokit.orgs.get({
     org: args["organization"]
