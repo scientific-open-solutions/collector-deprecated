@@ -1,4 +1,4 @@
-# This is a backup version of the main Collector repository.
+# This is a backup version of the main Collector repository - please look for the repository "Collector" instead
 
 # **Collector Documentation**
 
