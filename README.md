@@ -1,3 +1,5 @@
+# This is a backup version of the main Collector repository.
+
 # **Collector Documentation**
 
 Collector (Garcia, Kornell, Kerr, Blake & Haffey)
